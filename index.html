@@ -11,16 +11,18 @@
     <h1>KPoEM 시 창작 모델</h1>
 
     <label for="userInput" class="visually-hidden">텍스트 입력</label>
-    <input
+    <textarea
       id="userInput"
-      type="text"
       placeholder="원하는 시 구절을 입력하세요"
       autocomplete="off"
-    />
+    ></textarea>
 
     <button id="submitBtn">시 쓰기</button>
 
     <div id="status" class="status" aria-live="polite" aria-atomic="true"></div>
+    <h4>감정 분석 결과 : </h4>
+    <pre id="emotions" class="emotions" aria-live="polite"></pre>
+    <h4>생성된 시 : </h4>
     <pre id="output" class="output" aria-live="polite"></pre>
   </main>
 

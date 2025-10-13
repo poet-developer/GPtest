@@ -24,8 +24,9 @@ body {
 
 h1 { font-size: 1.5rem; margin: 0 0 16px; }
 
-input[type="text"] {
+textarea {
   width: 100%;
+  height: 200px;
   padding: 10px 12px;
   border: 1px solid var(--border);
   border-radius: 8px;
@@ -50,11 +51,21 @@ button:disabled {
 .status {
   min-height: 28px;
   margin-top: 16px;
-  color: var(--muted);
-  font-size: 14px;
+  font-size: 20px;
 }
 
 .output {
+  margin-top: 12px;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  white-space: pre-wrap;
+  word-break: break-word;
+  min-height: 40px;
+  font-size: 16px;
+}
+
+.emotions {
   margin-top: 12px;
   padding: 12px;
   border: 1px solid var(--border);
